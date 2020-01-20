@@ -14,6 +14,21 @@ exports.up = function(knex) {
             .string('password', 128)
             .notNullable();
 
+    }).createTable('snacks', snacks => {
+        snacks.increments();
+
+
+        snacks
+            .string('favoritesnack', 128)
+            .notNullable()
+
+        snacks
+            .integer('user_id')
+            .unsigned()
+            .references('id')
+            .inTable('users')
+            .onDelete('CASCADE')
+            .onUpdate('CASCADE')
 
     })
 
