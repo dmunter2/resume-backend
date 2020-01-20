@@ -1,0 +1,17 @@
+{
+  "name": "resume-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dmunter2/resume-backend.git",
+  "author": "dmunter2 <49967133+dmunter2@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "helmet": "^3.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.8",
+    "nodemon": "^2.0.2",
+    "sqlite3": "^4.1.1"
+  }
+}
